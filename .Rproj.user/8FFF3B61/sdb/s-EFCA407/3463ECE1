@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1476871265927.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3463ECE1",
+    "lastKnownWriteTime" : 4294967302,
+    "last_content_update" : 1476871265927,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "xmq29prfyw",
+        "caption" : "piaac",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=piaac&cache_key=xmq29prfyw",
+        "displayedObservations" : 7632,
+        "environment" : "",
+        "object" : "piaac",
+        "totalObservations" : 7632,
+        "variables" : 17
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
