@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "a = 4\na\n\n\nb<-6\nb\n\n\na <- 3\na\nb <- 6\nb\nrm(a)\n\n\nkanadearv <- 4\nkoerterarv <- 5\nloomadearv <- kanadearv + koerterarv\n\nrm(koerterarv)\n\n\nc (3, 5, 4, 3, 2, 3.4)\n\n\n\n\n\npikkJada <- c(3:65)\npikkJada\n\npikkus <- c(5, 6, 8, 10)\npikkus\n\n\npikkus + 5\n\npikkus + c(1, 2, 3)\npikkus + c(1, 2)\n\n\nloom <- c(\"kass\", \"koer\", \"karu\", \"elevant\")\n\nloom + \"viis\"\n\nloom + c(\"viis\")\n\n\nandmed <- data.frame(pikkus, loom)\n\nandmed\n\nrm(loom, pikkus)\nloom\npikkus\nrm (all)\n\nandmed$pikkus\n\nandmed$laius <- c(1, 4, 5, 3)\nandmed\n\nandmed$pikkusruut <- andmed$pikkus**2\nandmed\n\nandmed[c(\"pikkus\", \"laius\")]\n\n\nandmed$maht <- andmed$laius*andmed$pikkus\nandmed\n\n\nloomamaht <- andmed[c(\"loom\", \"maht\")]\nloomamaht\n\nandmed$pikkus[0]\nandmed$pikkus[c(2, 3)]\nandmed[3, 4]\nandemd\nandmed\n\nkaruelevant <- andmed[c(3, 4), c(1, 2, 3)]\nkaruelevant\n\n\nmean(andmed$pikkus)\n\n\npuuduv <- c(2, 3, 5, NA)\nmean(puuduv)\n\n\nmean(puuduv, na.rm = TRUE)\n\n?read.csv\n\n\nskp <- read.csv(\"skphinnang.csv\")\n\n\nlibrary(ggplot2)\n\ninstall.packages(\"dplyr\")\nlibrary(dplyr)\n\nsummary(skp)\nstr(skp)\nView(skp)\n\n\n\nskp$erinevus <- skp$SKP.kasv.praegu - skp$Kiirhinnang\nmean(skp$erinevus)\n\nskp\n\nskp$abserinevus <- abs(skp$erinevus)\nmean(skp$abserinevus)\n\n\nskp$correlation <- cor(skp$Kiirhinnang, skp$SKP.kasv.praegu)\n\nskp$correlation\nskp\n\nskp\n\n\npiaac <- read.csv(\"piaac2_tapitahtedeta.csv\")\nsummary(piaac)\nstr(piaac)\nView(piaac)\nrm(piaac_uus)\n\nquantile(piaac$sissetulek, probs= c(0.1, 0.5, 0.9), na.rm = TRUE)\n?quantile\n\n\nwrite.csv(skp, file = \"skp_uus.csv\", row.names = FALSE)\n?write.csv\n\nsave(skp, file=\"skpuus.Rdat\")\n\nload(file=\"skpuus.Rdat\")\nskp\ndput(skp, file=\"skp.txt\")\n\n\n\n\n\n\ntabel1 <- table(piaac$sugu, piaac$haridustase)\ntabel1\naddmargins(tabel1, c(1,2))\nprop.table(tabel1, 2)\n\nftable(xtabs(~isaharidus + emaharidus + haridustase, data=piaac))\nprop.table(xtabs(~isaharidus + emaharidus + haridustase, data=piaac))\n\nlibrary(\"stargazer\")\n\nstargazer(piaac, type=\"html\", out=\"tabel1.html\")\n\nskp$kuup <- as.Date(skp$kuup)\n\nsummary(skp)\n\n\nfaktorid <- read.csv(\"faktoritest.csv\")\nsummary(faktorid)\n\nstr(faktorid)\n\n\nx <- 3\n\nx == 3\nz <- 5\n\nx > 2 | z == 3\n\nx > 2 & z == 3\n\nloomad <- c(\"kana\", \"kalkun\", \"elevant\")\n\n\"konn\" %in% loomad\n\nkeskharitud <- subset(piaac, haridustase==\"Keskmine\")\nsummary(keskharitud)\n\nkeskmineK <- mean(piaac$sissetulek[piaac$kaaslane==\"Jah\"], na.rm= TRUE)\nkeskmineK\n\nmean(piaac$sissetulek[piaac$vanus>34 & piaac$haridustase==\"Keskmine\"], na.rm = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nqplot(data=skp, x=kuup, y=SKP.kasv.praegu, geom=c(\"line\", \"point\"))\n\npiaac <- subset(piaac, !is.na(haridustase))\n\nqplot(data=piaac,x=haridustase, y=literacy, geom=\"boxplot\", color=sugu)\n\nqplot(data=piaac, x=literacy, y=sissetulek, geom=c(\"smooth\"), color=sugu, facets=.~haridustase)\n\npiaac$haridustase <- factor(piaac$haridustase, levels=c(\"Madal\", \"Keskmine\", \"NA\"))\n\nmosaicplot( ~tervis + sugu, data=piaac)\n\npiaac2 <- read.csv(\"piaac_uus.csv\")\n\nlibrary(lubridate)\n\ndmy(\"05.06.1983\") %--% dmy(\"19.10.2016\") / seconds(1)\n\n\n\n\n",
+    "created" : 1476858808780.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2353455664",
+    "id" : "E062D65F",
+    "lastKnownWriteTime" : 1476882386,
+    "last_content_update" : 1476882874015,
+    "path" : "~/projektid/Rkoolitus/Rkoolitus/esimene.R",
+    "project_path" : "esimene.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
