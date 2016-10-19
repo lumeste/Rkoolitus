@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "a = 4\na\n\n\nb<-6\nb\n\n\na <- 3\na\nb <- 6\nb\nrm(a)\n\n\nkanadearv <- 4\nkoerterarv <- 5\nloomadearv <- kanadearv + koerterarv\n\nrm(koerterarv)\n\n\nc (3, 5, 4, 3, 2, 3.4)\n\n\n\n\n\npikkJada <- c(3:65)\npikkJada\n\npikkus <- c(5, 6, 8, 10)\npikkus\n\n\npikkus + 5\n\npikkus + c(1, 2, 3)\npikkus + c(1, 2)\n\n\nloom <- c(\"kass\", \"koer\", \"karu\", \"elevant\")\n\nloom + \"viis\"\n\nloom + c(\"viis\")\n\n\nandmed <- data.frame(pikkus, loom)\n\nandmed\n\nrm(loom, pikkus)\nloom\npikkus\nrm (all)\n\nandmed$pikkus\n\nandmed$laius <- c(1, 4, 5, 3)\nandmed\n\nandmed$pikkusruut <- andmed$pikkus**2\nandmed\n\nandmed[c(\"pikkus\", \"laius\")]\n\n\nandmed$maht <- andmed$laius*andmed$pikkus\nandmed\n\n\nloomamaht <- andmed[c(\"loom\", \"maht\")]\nloomamaht\n\nandmed$pikkus[0]\nandmed$pikkus[c(2, 3)]\nandmed[3, 4]\nandemd\nandmed\n\nkaruelevant <- andmed[c(3, 4), c(1, 2, 3)]\nkaruelevant\n\n\nmean(andmed$pikkus)\n",
+    "contents" : "a = 4\na\n\n\nb<-6\nb\n\n\na <- 3\na\nb <- 6\nb\nrm(a)\n\n\nkanadearv <- 4\nkoerterarv <- 5\nloomadearv <- kanadearv + koerterarv\n\nrm(koerterarv)\n\n\nc (3, 5, 4, 3, 2, 3.4)\n\n\n\n\n\npikkJada <- c(3:65)\npikkJada\n\npikkus <- c(5, 6, 8, 10)\npikkus\n\n\npikkus + 5\n\npikkus + c(1, 2, 3)\npikkus + c(1, 2)\n\n\nloom <- c(\"kass\", \"koer\", \"karu\", \"elevant\")\n\nloom + \"viis\"\n\nloom + c(\"viis\")\n\n\nandmed <- data.frame(pikkus, loom)\n\nandmed\n\nrm(loom, pikkus)\nloom\npikkus\nrm (all)\n\nandmed$pikkus\n\nandmed$laius <- c(1, 4, 5, 3)\nandmed\n\nandmed$pikkusruut <- andmed$pikkus**2\nandmed\n\nandmed[c(\"pikkus\", \"laius\")]\n\n\nandmed$maht <- andmed$laius*andmed$pikkus\nandmed\n\n\nloomamaht <- andmed[c(\"loom\", \"maht\")]\nloomamaht\n\nandmed$pikkus[0]\nandmed$pikkus[c(2, 3)]\nandmed[3, 4]\nandemd\nandmed\n\nkaruelevant <- andmed[c(3, 4), c(1, 2, 3)]\nkaruelevant\n\n\nmean(andmed$pikkus)\n\n\npuuduv <- c(2, 3, 5, NA)\nmean(puuduv)\n\n\nmean(puuduv, na.rm = TRUE)\n\n?read.csv\n",
     "created" : 1476858808780.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2777622177",
+    "hash" : "1232059800",
     "id" : "E062D65F",
     "lastKnownWriteTime" : 1476864330,
-    "last_content_update" : 1476864330275,
+    "last_content_update" : 1476864637123,
     "path" : "~/projektid/Rkoolitus/Rkoolitus/esimene.R",
     "project_path" : "esimene.R",
     "properties" : {
