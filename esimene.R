@@ -101,7 +101,7 @@ skp <- read.csv("skphinnang.csv")
 library(ggplot2)
 
 install.packages("dplyr")
-library(dplyr)
+library(tidyverse)
 
 summary(skp)
 str(skp)
@@ -218,9 +218,13 @@ piaac$haridustase <- factor(piaac$haridustase, levels=c("Madal", "Keskmine", "NA
 
 mosaicplot( ~tervis + sugu, data=piaac)
 
+piaac2 <- read.csv("piaac_uus.csv")
 
+library(lubridate)
 
+dmy("05.06.1983") %--% dmy("19.10.2016") / seconds(1)
 
-
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
 
 
