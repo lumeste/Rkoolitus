@@ -32,4 +32,20 @@ names(p.keskmine)
 p.keskmine
 ?quantile
 
+## andmed tidyr kujule - igas reas ainult 1! key-value pair
 
+loomad <- read.csv("http://www.ut.ee/~iseppo/loomad.csv")
+View(loomad)
+
+library(tidyverse)
+
+gather(loomad, key = mootmine, value = vaartus, pikkus, laius, kõrgus)
+
+skp <- read.csv("http://www.ut.ee/~iseppo/skpuus.csv")
+skp$kuup <- as.Date(skp$kuup)
+?as.Date
+
+skp.pikk <- gather(skp, key = näitaja, value = väärtus, Kiirhinnang, SKP.kasv.praegu)
+?gather
+skp.tidy <- gather(skp, key = näitja, value = väärtus, -kuup)
+skp.wide <- spread(skp.tidy, key = kuup, value = väärtus)
